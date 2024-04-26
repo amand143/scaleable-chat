@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index ",
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.13.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "@types/node": "^20.12.7",
+    "fs": "^0.0.1-security",
+    "ioredis": "^5.4.1",
+    "kafkajs": "^2.2.4",
+    "socket.io": "^4.7.5",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.0"
+  }
+}
